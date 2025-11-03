@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    background-color:#000;
+    color:#10BAC0;
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+.container{
+    width:90%;
+    max-width:400px;
+    padding:40px 60px;
+}
+
+/* --- Header --- */
+.logo{
+    display:inline-flex;
+    align-items:center;
+    background-color:#262626;
+    border-radius:40px;
+    padding:10px 22px;
+    color:#fff;
+    font-weight:600;
+    font-size:1.1rem;
+    margin-bottom:12px;
+    border:1.5px solid #616161;
+    box-shadow:0 0 10px #a6ff3f20;
+}
+.logo-icon{ margin-right:10px; }
+
+/* --- Видео секция --- */
+.video-section{
+    width:100%;
+    max-width:700px;
+    margin-bottom:30px;
+    border-radius:28px;
+    background-color:#262626;
+    border:1.5px solid #616161;
+    padding:8px;
+    overflow:visible;
+    box-shadow:0 0 15px rgba(166,255,63,0.04);
+}
+
+.video-inner{
+    width:100%;
+    border-radius:20px;
+    overflow:hidden;
+    background-color:#0a0a0a;
+    display:block;
+    aspect-ratio: 1 / 1;
+}
+
+.video-inner video{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:contain;
+    background-color:#000;
+}
+
+/* --- Текст --- */
+h1{
+    color:#ffffff;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:5px;
+    text-align:left;
+}
+.subtitle{
+    color:#b1b1b1;
+    font-size:1rem;
+    margin-bottom:30px;
+    text-align:left;
+}
+
+/* --- Контакты --- */
+.contact-block{ margin-bottom:30px; text-align:left; }
+h2{ font-size:1rem; color:#fff; margin-bottom:8px; }
+.number, .email{ color:#b1b1b1; font-size:1.1rem; font-weight:200; }
+.email a{ color:#10BAC0; text-decoration:none; }
+.email a:hover{ text-decoration:underline; }
+
+/* --- Кнопки --- */
+.buttons{ margin-top:10px; }
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#262626;
+    border:1.5px solid #616161;
+    border-radius:50px;
+    width:50px; height:50px;
+    margin-right:10px;
+    transition:0.3s ease;
+}
+.btn:hover{ background-color:#333; }
+.btn img{ 
+    width:22px; 
+    height:22px; 
+}
+
+/* --- WhatsApp фирменный стиль --- */
+.btn.whatsapp img {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(74%) saturate(368%) hue-rotate(89deg) brightness(92%) contrast(91%);
+    transition: filter 0.3s ease;
+}
+.btn.whatsapp:hover {
+    border-color: #25D366;
+    box-shadow: 0 0 8px #25D36660;
+}
+.btn.whatsapp:hover img {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(54%) saturate(447%) hue-rotate(89deg) brightness(105%) contrast(95%);
+}
+
+/* --- Telegram фирменный стиль --- */
+.btn.telegram img {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(73%) saturate(1176%) hue-rotate(177deg) brightness(96%) contrast(101%);
+    transition: filter 0.3s ease;
+}
+.btn.telegram:hover {
+    border-color: #0088cc;
+    box-shadow: 0 0 8px #0088cc60;
+}
+.btn.telegram:hover img {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(69%) saturate(1755%) hue-rotate(177deg) brightness(104%) contrast(97%);
+}
+
+
+/* --- Нижние кнопки --- */
+.bottom-buttons{
+    display:flex; gap:12px; margin-top:30px;
+}
+.big-btn{
+    background-color:#262626; color:#ffffff; padding:12px 26px; border-radius:50px;
+    text-decoration:none; font-weight:600; border:1.5px solid #616161; transition:0.3s ease;
+}
+.big-btn:hover{ background-color:#333; border-color:#10BAC0; box-shadow:0 0 6px #a6ff3f50; }
+
+/* --- Адаптив --- */
+@media(max-width:480px){
+    .container{ padding:30px 25px; }
+    .logo{ font-size:1rem; padding:8px 16px; }
+    h1{ font-size:1.6rem; }
+    .big-btn{ flex:1; font-size:0.95rem; text-align:center; }
+    .bottom-buttons{ flex-direction:column; align-items:flex-start; }
+    .video-section{ border-radius:20px; padding:6px; }
+    .video-inner{ border-radius:14px; }
+}
+
