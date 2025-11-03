@@ -3,6 +3,8 @@
 *{ margin:0; padding:0; box-sizing:border-box; }
 
 body{
+    min-width:280px;
+    max-width:700px;
     background-color:#000;
     color:#10BAC0;
     font-family:'Inter',sans-serif;
@@ -152,4 +154,5 @@ h2{ font-size:1rem; color:#fff; margin-bottom:8px; }
     .video-section{ border-radius:20px; padding:6px; }
     .video-inner{ border-radius:14px; }
 }
+
 
